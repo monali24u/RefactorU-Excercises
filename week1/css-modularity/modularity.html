@@ -31,11 +31,11 @@
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
 						<div>
-							<img src="http://placehold.it/120">
-							<img src="http://placehold.it/160">
-				    	<p>Oh hello</p>
-							<img src="http://placehold.it/80">
-							<ol>
+							<img class="box1" src="http://placehold.it/120">
+							<img class="box1" src="http://placehold.it/160">
+				    	<p class="box1 c">Oh hello</p>
+							<img class="d" src="http://placehold.it/80">
+							<ol id="l1">
 								<li>Ready</li>
 								<li>Fire</li>
 								<li>Aim</li>
@@ -52,7 +52,7 @@
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
 						<div>
-							<div>
+							<div class="vertical">
 								<img src="http://placehold.it/50">
 								<img src="http://placehold.it/50">
 								<img src="http://placehold.it/50">
@@ -65,7 +65,7 @@
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
 			    	<div>
-							<div>
+							<div class="diff">
 								<img src="http://placehold.it/50">
 								<img src="http://placehold.it/20">
 					    	<p>Oh hello</p>
@@ -87,7 +87,7 @@
 	    		<p class="instruction-text">Make the list items horizontal instead of vertical.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<ul>
+			    	<ul id="Hlist">
 							<li>Ready</li>
 							<li>Fire</li>
 							<li>Aim</li>
@@ -102,18 +102,27 @@
 	    		<p class="instruction-text">Create a set of different-sized buttons.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<a href="#">Buy Now</a>
-			    	<a href="#">Learn More</a>
-			    	<a href="#">OK</a>
+			    	<a class="button b1" href="#">Buy Now</a>
+            <a class="button b2" href="#">Learn More</a>
+			    	<a class="button b3" href="#">OK</a>
+            <!-- <button type="button">Buy Now </button>
+            <button type="button">Learn More</button>
+            <button type="button">OK</button> -->
 				    <!-- End editable area -->
 			    </div>
 
 	    		<p class="instruction-text">Should work with both &lt;a&gt;, &lt;button&gt;, and &lt;submit&gt; elements.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<a href="#">Learn More</a>
-			    	<input type="button" href="#" value="Accept">
-			    	<input type="submit" href="#" value="Submit">
+			    	<a class="button2" href="#">Learn More</a>
+			    	<input class="button2" type="button" href="#" value="Accept" id="mybutton" onclick="myFunction()">
+			    	<input class="button2" type="submit" href="#" value="Submit" id="mysubmit" onclick="myFunction()">
+            <script>
+              function myFunction() {
+                  document.getElementById("mysubmit").disabled = true;
+                  document.getElementById("mybutton").disabled = true;
+              }
+            </script>
 				    <!-- End editable area -->
 			    </div>
 			  </li>
