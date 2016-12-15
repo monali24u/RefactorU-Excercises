@@ -64,19 +64,25 @@
 .b2{
   height: 25px;
   width: 135px;
+  position: relative;
+  top: 10px;
   font-family: sans-serif;
   font-size: medium;
 }
 .b3{
   height: 15px;
   width: 35px;
+  position: relative;
+  top: 13px;
   font-family: sans-serif;
   font-size: small;
 
 }
 
 .button2 {
-    height: 25px;
+    border-style: none;
+    box-sizing: border-box;
+    height: 35px;
     width: 135px;
     padding: 5px;
     background-color: lightpink;
@@ -84,5 +90,203 @@
     text-align: center;
     display: inline-block;
     text-decoration: none;
-    border-radius: 5px;    
+    border-radius: 5px;
+
+}
+/*  Navigation bar */
+.navlist {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: lightpink;
+}
+.navlist li{
+  float: left;
+  font-size: 15px;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+.navlist li a {
+    position: relative;
+    display: inline;
+    color: white;
+    text-align: center;
+    left: auto;
+    text-decoration: none;
+    left: -25px;
+}
+
+.navlist li a:hover {
+    background-color: #111;
+}
+
+/*  Pagination  */
+.pagilist{
+  color: lightpink;
+}
+.pagilist li{
+  font-size: 18px;
+  padding: 10px 10px;
+  display: inline;
+}
+.pagilist li a{
+  color: lightpink;
+}
+.prev{
+  text-decoration: none;
+}
+span {
+  color:lightgray;
+  text-decoration: underline;
+}​
+
+/*  Comment Stream  */
+.absolute{
+  position: absolute;
+}
+
+.para{
+  position: relative;
+  left: 95px;
+  top: -86px;
+  clear: both;
+}
+.cleartext{
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+#img2{
+  position: relative;
+  top: -165px;
+}
+
+#p2{
+  position: relative;
+  left: 95px;
+  top: -251px;
+}
+
+#img3{
+  position: relative;
+  top: -205px;
+}
+
+#p3{
+  position: relative;
+  left: 95px;
+  top: -293px;
+}
+#img3small{
+  position: relative;
+  top: -47px;
+}
+
+.p3small{
+  position: relative;
+  left: 75px;
+  top: -65px;
+}
+#p3s{
+  position: relative;
+  top: -110px;
+}
+time{
+  color: gray;
+  font-size: 12px;
+}
+
+/*  tabbed content control  */
+
+.tabrow {
+  position: relative;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+}
+.tabrow li {
+  margin: 0 2px;
+  padding: 0 10px;
+  border: 1px solid #AAA;
+  background: #FFF;
+  position: relative;
+  left: -229px;
+  display: inline-block;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.tabrow li.selected {
+  background: #FFF;
+  color: #000;
+  position: relative;
+  z-index: 2;
+  border-bottom-color: #FFF;
+}
+
+.tabrow:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #AAA;
+  z-index: 1;
+  border-bottom-left-radius: 6px;
+  border-width: 0 0 1px 1px;
+}
+
+.tabrow:before {
+  z-index: 1;
+  border-bottom-right-radius: 6px;
+  border-width: 0 1px 1px 0;
+}
+.paratab{
+  border: 1px solid #AAA;
+  padding: 10px;
+  padding-bottom: 150px;
+  border-radius: 6px;
+}
+.text{
+  text-decoration: none;
+  color: blue;
+}
+
+/* lightbox  */
+
+.outer{
+  background-color: darkgray;
+  height: 300px;
+  width: 800px;
+  display: inline-block;
+  position: relative;
+}
+
+.inner{
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  height: 221px;
+  top: 35%;
+  left: 25%;
+  padding: 15px;
+  border-radius: 5px;
+  transform: translateY(-35%) translateX(-20%);
+
+}
+
+.buttonclose{
+  position: absolute;
+  height: 25px;
+  width: 135px;
+  padding: 5px;
+  background-color: lightpink;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  right: 20px;
 }

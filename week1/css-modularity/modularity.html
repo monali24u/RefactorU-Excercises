@@ -115,14 +115,8 @@
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
 			    	<a class="button2" href="#">Learn More</a>
-			    	<input class="button2" type="button" href="#" value="Accept" id="mybutton" onclick="myFunction()">
-			    	<input class="button2" type="submit" href="#" value="Submit" id="mysubmit" onclick="myFunction()">
-            <script>
-              function myFunction() {
-                  document.getElementById("mysubmit").disabled = true;
-                  document.getElementById("mybutton").disabled = true;
-              }
-            </script>
+			    	<input class="button2" href="#" value="Accept">
+			    	<input class="button2" href="#" value="Submit">
 				    <!-- End editable area -->
 			    </div>
 			  </li>
@@ -134,7 +128,7 @@
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
 			    	<nav>
-			    		<ul>
+			    		<ul class="navlist">
 			    			<li><a href="#">Home</a></li>
 			    			<li><a href="#">Products</a></li>
 			    			<li><a href="#">About</a></li>
@@ -152,8 +146,8 @@
 	    		<p class="instruction-text">Style a pagination control for navigating through pages of search results.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<ol>
-			    		<li><a href="#">prev</a></li>
+			    	<ol class="pagilist">
+			    		<li><a class="prev" href="#">prev</a></li>
 			    		<li><a href="#">5</a></li>
 			    		<li><a href="#">6</a></li>
 			    		<li><a href="#">7</a></li>
@@ -161,7 +155,7 @@
 			    		<li><a href="#">9</a></li>
 			    		<li><a href="#">10</a></li>
 			    		<li><a href="#">11</a></li>
-			    		<li><a href="#">next</a></li>
+			    		<li><a class="prev" href="#">next</a></li>
 			    	</ol>
 				    <!-- End editable area -->
 			    </div>
@@ -174,21 +168,22 @@
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
 				    <div>
-				    	<div style="float:left">
+				    	<div class="absolute" style="float:left">
 					    	<img src="http://gravatar.com/avatar/0?d=identicon">
 					    </div>
-				    	<div style="">
+				    	<div class="para" style="">
 				    		<strong>@metaraine</strong>
 					    	<time>Thursday, June 27, 2013, 4:15pm</time>
-					    	<p>Wow, that was an amazing article. Wow, that was an amazing article. Wow, that was an amazing article. Wow, that was an amazing article. Wow, that was an amazing article. Wow, that was an amazing article. Wow, that was an amazing article. Wow, that was an amazing article. Wow, that was an amazing article.Wow, that was an amazing article.Wow, that was an amazing article.Wow, that was an amazing article.Wow, that was an amazing article.Wow, that was an amazing article.Wow, that was an amazing article.Wow, that was an amazing article.Wow, that was an amazing article.Wow, that was an amazing article. </p>
-					    </div>
+					    	<p>Wow, that was an amazing article. <p class="cleartext">Wow, that was an amazing article. Wow, that was an amazing article. Wow, that was an amazing article. Wow, that was an amazing article. Wow, that was an amazing article. Wow, that was an amazing article. Wow, that was an amazing article. Wow, that was an amazing article.Wow, that was an amazing article.Wow, that was an amazing article.Wow, that was an amazing article.Wow, that was an amazing article.Wow, that was an amazing article.Wow, that was an amazing article.Wow, that was an amazing article.Wow, that was an amazing article.Wow, that was an amazing article. </p>
+              </p>
+              </div>
 					  </div>
 
 				    <div>
-				    	<div>
+				    	<div id="img2">
 					    	<img src="http://gravatar.com/avatar/1?d=identicon">
 					    </div>
-				    	<div>
+				    	<div id="p2">
 				    		<strong>@seandaken</strong>
 					    	<time>Friday, June 28, 2013, 11:02</time>
 					    	<p>I learned 100 new things.</p>
@@ -196,10 +191,10 @@
 					  </div>
 
 				    <div>
-				    	<div>
+				    	<div id="img3">
 					    	<img src="http://gravatar.com/avatar/0?d=identicon">
 					    </div>
-				    	<div>
+				    	<div id="p3">
 				    		<strong>@metaraine</strong>
 					    	<time>2 hours ago</time>
 					    	<p>How about we have the RefactorU student climb Bear Peak each morning before class?</p>
@@ -208,7 +203,7 @@
 						    	<div>
 							    	<img src="http://gravatar.com/avatar/1?d=identicon&s=60">
 							    </div>
-						    	<div>
+						    	<div class="p3small">
 						    		<strong>@seandaken</strong>
 							    	<time>45 minutes ago</time>
 							    	<p>Sure</p>
@@ -216,10 +211,10 @@
 							  </div>
 
 						    <div>
-						    	<div>
+						    	<div id="img3small">
 							    	<img src="http://gravatar.com/avatar/2?d=identicon&s=60">
 							    </div>
-						    	<div>
+						    	<div class="p3small" id="p3s">
 						    		<strong>@nullempire</strong>
 							    	<time>just now</time>
 							    	<p>No!</p>
@@ -237,21 +232,21 @@
 	    		<p class="instruction-text">Create styles for a tabbed content control. There should be an active tab that is styled to appear in the foreground.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<ul>
+			    	<ul class="tabrow">
 			    		<li><a href="#">
-			    			<div>First</div>
+			    			<div class="text">First</div>
+			    		</a></li>
+			    		<li class="selected"><a href="#">
+			    			<div class="text">Second</div>
 			    		</a></li>
 			    		<li><a href="#">
-			    			<div>Second</div>
+			    			<div class="text">Third</div>
 			    		</a></li>
 			    		<li><a href="#">
-			    			<div>Third</div>
-			    		</a></li>
-			    		<li><a href="#">
-			    			<div>Fourth</div>
+			    			<div class="text">Fourth</div>
 			    		</a></li>
 			    	</ul>
-	    			<div>
+	    			<div class="paratab">
 				    	<p>Lemon drops dessert bonbon sesame snaps. Cheesecake candy canes ice cream dessert toffee applicake caramels pudding pie. Marshmallow wypas halvah ice cream.</p>
 							<p>Tart croissant lollipop toffee bear claw gingerbread candy canes tart. Cookie candy canes carrot cake muffin danish jelly beans cookie. Donut liquorice jelly dragée biscuit cookie wafer. Soufflé caramels gingerbread cheesecake sesame snaps.</p>
 							<p>Chocolate cake wypas pie tiramisu lollipop chocolate bar lollipop. Chupa chups sugar plum oat cake candy canes lemon drops. Brownie fruitcake oat cake gummi bears faworki. Muffin cheesecake pastry.</p>
@@ -267,14 +262,14 @@
                 <div class="instruction-answer">
                     <!-- Edit here -->
                     <div>
-                        <div>
-                            <div>
+                        <div class="outer">
+                            <div class="inner">
                                 <h3>Hello</h3>
                                 <p>Cupcake ipsum dolor sit amet. Gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin wafer gummi
                                     bears. Cupcake ipsum dolor sit amet. Gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin
                                     wafer gummi bears.</p>
                                 <div>
-                                    <a>Close</a>
+                                    <a class="buttonclose">Close</a>
                                 </div>
                             </div>
                         </div>
