@@ -1,0 +1,70 @@
+
+h1{
+  text-align: center;
+  color: deeppink;
+}
+h3{
+  text-align: center;
+  color: blue;
+}
+/* Navigation Bar */
+.navbar{
+  margin: 5vw;
+}
+.navlist {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: crimson;
+}
+.navlist li{
+  float: left;
+  font-size: 15px;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+.navlist li a {
+    position: relative;
+    display: inline;
+    color: white;
+    text-align: center;
+    left: auto;
+    text-decoration: none;
+    left: -25px;
+}
+
+.navlist li a:hover {
+    background-color: #111;
+}
+
+@media (max-width: 960px){
+  body{
+    text-align: center;
+    padding: 10px;
+  }
+  p{
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    left: 2px;
+  }
+  img{
+    position: relative;
+    left: 2px;
+  }
+  .wrapper{
+    align-self: center;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .navlist ul li {
+    display: inline-block;
+    text-align: center;
+  }
+
+}
+@media (min-width: 961px){
+  body {
+    background-color: coral;
+    visibility: hidden;
+  }
+}
