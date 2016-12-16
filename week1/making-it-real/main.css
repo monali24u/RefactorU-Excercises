@@ -150,7 +150,7 @@ code{
 .para3{
   padding: 0px 33px;
   position: relative;
-  top: -153px;
+  top: -118px;
 }
 .para3 hr{
   position: relative;
@@ -170,3 +170,95 @@ code{
   position: relative;
   left: 42px;
 }
+
+.sec4{
+  padding: 0px 33px;
+  position: relative;
+  top: -118px;
+}
+.sedc4 hr{
+  position: relative;
+  top: -14px
+}
+
+.oneline{
+  color: gainsboro;
+  font-family: arial;
+  font-size: 14px;
+}
+
+/* comment */
+
+.comment{
+  padding: 0px 33px;
+  position: relative;
+  top: -118px;
+}
+.info{
+  display: -webkit-inline-box;
+  background-color: white;
+  color: gainsboro;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  padding: 0px;
+  top: -26px;
+}
+.class1{
+  height: 25px;
+  width: 76%;
+  border: 2px solid gainsboro;
+  float: right;
+}
+
+/*  Submit  */
+.sub1{
+  display: block;
+  background-color: crimson;
+  padding: 0px;
+  margin: 0px;
+  padding-top: 8px;
+    text-align: center;
+    height: 32px;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-decoration-color: white;
+}
+.submit{
+  padding: 0px 33px;
+  position: relative;
+  top: -118px;
+}
+.submit time{
+  color: gainsboro;
+  position: relative;
+  left: 68px;
+  top: -66px;
+}
+
+.submit h4{
+  position: relative;
+  left: 51px;
+  top: -60px;
+}
+
+.submit p{
+  margin: 0px;
+  position: relative;
+  top: -40px;
+}
+
+.sideuser{
+  position: relative;
+  left: 55px;
+  padding: 0px 33px;
+}
+
+/*.vertical{
+  background-color: black;
+  position: relative;
+  left: -10px;
+  width:2px;
+  height: 50px;
+  /*height:50px;
+}*/
