@@ -1,0 +1,172 @@
+
+body{
+  background-color: darkgray;
+}
+
+header{
+    position: relative;
+    left: 15vw;
+    background-color: lime;
+    height: 250px;
+    width: 550px;
+}
+
+#h2{
+  color: white;
+  position: relative;
+  top: 210px;
+  font-style: normal;
+  left: 5px;
+
+}
+
+.outer{
+  width: 550px;
+}
+
+/*  Navbar  */
+.navlist {
+    position: relative;
+    left: 15vw;
+    top: -17px;
+    overflow: hidden;
+    background-color: black;
+}
+.navlist li{
+  float: right;
+  font-size: 14px;
+  padding: 10px;
+}
+.navlist li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* first para */
+
+.page{
+  position: relative;
+  top: -39px;
+  left: 15vw;
+  width: 550px;
+  background-color: white;
+}
+.firstpara p{
+  color: black;
+  padding: 0px 33px;
+}
+.semititle{
+  padding: 20px;
+}
+.firstpara a{
+  color: orange;
+}
+span{
+  font-style: italic;
+}
+
+.sidebar{
+  position: relative;
+  display: inline-block;
+  top: -246px;
+  left: 560px;
+  height: 178px;
+  width: 176px;
+  background-color: white;
+  text-decoration: none;
+}
+.list1{
+  padding: 0px;
+  margin: 0px;
+  padding-left: 25px;
+  list-style-type: none;
+}
+.list1 li a {
+    padding: none;
+    color: gray;
+    text-decoration: none;
+    display: block;
+}
+
+h4{
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.para2 h3{
+  position: relative;
+  top: -13px;
+  padding-left: 10px;
+  margin: 5px;
+}
+.para2{
+  padding: 0px 33px;
+  position: relative;
+  top: -153px;
+}
+.para2 hr{
+  position: relative;
+  top: -14px
+}
+.para2 p{
+  margin-top: -4px;
+}
+
+table{
+  font-family: arial,sans-serif;
+  border-collapse: collapse;
+  border-spacing: inherit;
+}
+
+th{
+  background-color: silver;
+}
+th, td{
+  border: 1px solid black;
+  text-align: left;
+  padding: 7px;
+
+}
+
+.button{
+    padding: 5px;
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.p2small{
+  position: relative;
+  top: 25px;
+}
+
+code{
+  text-align: left;
+}
+
+.para3{
+  padding: 0px 33px;
+  position: relative;
+  top: -153px;
+}
+.para3 hr{
+  position: relative;
+  top: -14px
+}
+.para3 p{
+  margin-top: -4px;
+}
+.snip{
+  height: 80px;
+  width: 449px;
+  background-color: silver;
+  margin-bottom: 20px;
+  text-align: left;
+}
+code{
+  position: relative;
+  left: 42px;
+}
