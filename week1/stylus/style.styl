@@ -1,0 +1,17 @@
+primaryColor = bluevoilet
+secondaryColor = aqua
+
+parent
+  background primaryColor
+  color secondaryColor
+  border solid 2px @color
+  child
+    color red
+    border dashed 2px primaryColor
+
+
+@media (min-width:780px)
+  parent
+    background red
+  parent:hover
+    background coral

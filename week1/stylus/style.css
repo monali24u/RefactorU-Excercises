@@ -1,0 +1,17 @@
+parent {
+  background: bluevoilet;
+  color: #0ff;
+  border: solid 2px #0ff;
+}
+parent child {
+  color: #f00;
+  border: dashed 2px bluevoilet;
+}
+@media (min-width: 780px) {
+  parent {
+    background: #f00;
+  }
+  parent:hover {
+    background: #ff7f50;
+  }
+}
