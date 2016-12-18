@@ -1,0 +1,67 @@
+.container{
+  padding: 0px;
+  margin: 0px;
+}
+.navbar{
+  background-color: black;
+  height: 35px;
+  position: absolute;
+  width: 100%
+}
+.navbar-nav{
+  float: right;;
+}
+
+.navbar-nav li{
+  padding: 3px;
+  margin: 0px;
+  position: relative;
+  top: 5px;
+  left: 1px;
+}
+
+
+@media(max-width:780px){
+  .navbar-nav li{
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 768px){
+    .navbar-nav{
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float:none;
+    }
+.navbar-brand{
+  padding-left: 85px;
+}
+
+.jumbotron{
+  padding: 80px;
+}
+
+.heading{
+  position: absolute;
+  top: 351px;
+  padding: 45px;
+}
+
+hr{
+  border-top: 1px solid #eee;
+}
+
+@media (min-width: 768px){
+  .row {
+      padding-left: 10%;
+  }
+  hr{
+    position: relative;
+    left: 9%;
+  }
+  footer{
+    position: relative;
+    left: 9%
+  }
+}
