@@ -1,9 +1,52 @@
-/*
-	Put your custom CSS here.
 
-	You may find these CSS3 properties useful:;
-		transition
-		-webkit-transform
-		-webkit-transform-style
-		-webkit-backface-visibility
-*/
+	 /*flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+  .front:hover{
+    opacity: 0;
+  }
+
+  .back:hover{
+    opacity: 1;
+  }
+
+/* flip speed goes here */
+.flipper{
+  transition: 4s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane placed above back */
+.front {
+	z-index: 2;
+  position: inherit;
+	transform: rotateY(0deg);
+}
+
+/* back hidden pane */
+.back{
+	transform: rotateY(180deg);
+}
+
+/*.........................................*/
+
+#img2 {
+  margin:0 auto;
+  transition: background-image 1s ease-in-out;
+  background-image:url("/images/butte.jpg");
+}
+
+#img2:hover {
+  background-image:url("/images/flower.jpg");
+}
