@@ -49,6 +49,12 @@ function toArray(one, two, three){
   Arr.push(one,two,three);
   //var Array = [one, two, three];
   return Arr;
+  
+  //another version
+//   for(var i=0; i<arguments.length; i++){
+//     Arr.push(arguments[i]);
+//   }
+  
 }
 
 var result = toArray(1,4,5);
