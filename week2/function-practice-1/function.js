@@ -45,8 +45,10 @@ console.log("negate(5) is:- "+ result);
 // -------------------------------------------
 
 function toArray(one, two, three){
-  var Array = [one, two, three];
-  return Array;
+  var Arr = [];
+  Arr.push(one,two,three);
+  //var Array = [one, two, three];
+  return Arr;
 }
 
 var result = toArray(1,4,5);
