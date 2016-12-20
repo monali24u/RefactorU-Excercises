@@ -1,0 +1,36 @@
+
+.divform{
+  height: 500px;
+  width: 500px;
+  background-color: Gainsboro ;
+  padding: 10px;
+  position: absolute;
+  left: 10%;
+}
+
+.tag1 input{
+  height: 36px;
+  width: 200px;
+  position: relative;
+  left: 18px;
+  padding: 6px;
+}
+
+.tag1 #Name{
+  position: relative;
+  left: 86px;
+}
+
+.tag1 #StreetAddress{
+  position: relative;
+  left: 30px;
+}
+
+.tag1 label{
+  padding: 10px;
+}
+
+.tag1 button{
+  width: 120px;
+  height: 45px;
+}
