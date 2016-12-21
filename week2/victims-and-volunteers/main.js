@@ -41,16 +41,17 @@ function clearAndShow(){
 
 function insert(){
 
-  obj['Role'] = vArr.value;
-  obj['Name'] = nArr.value;
-  obj['PhoneNumber'] = pArr.value;
-  obj['StreetAddress'] = sArr.value;
+  var obj1 = new Object();
+  obj1['Role'] = vArr.value;
+  obj1['Name'] = nArr.value;
+  obj1['PhoneNumber'] = pArr.value;
+  obj1['StreetAddress'] = sArr.value;
 
   if(vArr.value === "victim"){
-      victimArr.push(obj);
+      victimArr.push(obj1);
   }
   else if(vArr.value === "volunteer"){
-      volunteerArr.push(obj);
+      volunteerArr.push(obj1);
   }
    clearAndShow();
    //  nameArr.push(nArr.value);
@@ -88,7 +89,9 @@ function show(){
         }
       table.appendChild(row);
     }
-
-    
-    console.log(table);
+    var body = document.querySelectorAll('.divform')[0];
+      body.appendChild(table);
+    document.getElementsByTagName("table")[0].className = "table";
+    // document.getElementByClass('.divform').appendChild(table);
+    //console.log(table);
 }

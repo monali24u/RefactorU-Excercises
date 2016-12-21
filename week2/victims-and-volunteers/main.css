@@ -23,7 +23,6 @@ button, select{
 
 }
 
-
 .tag1 #Role{
   position: relative;
   left: 98px;
@@ -39,7 +38,6 @@ button, select{
   left: 30px;
 }
 
-
 .tag1 label{
   padding: 10px;
 }
@@ -47,4 +45,19 @@ button, select{
 .tag1 button{
   width: 120px;
   height: 45px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table, td, th{
+    border: 1px solid black;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 15px;
 }
