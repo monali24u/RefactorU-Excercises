@@ -16,15 +16,29 @@
   padding: 6px;
 }
 
+button, select{
+    text-transform: none;
+    height: 36px;
+    width: 193px;
+
+}
+
+
+.tag1 #Role{
+  position: relative;
+  left: 98px;
+}
+
 .tag1 #Name{
   position: relative;
-  left: 86px;
+  left: 90px;
 }
 
 .tag1 #StreetAddress{
   position: relative;
   left: 30px;
 }
+
 
 .tag1 label{
   padding: 10px;
