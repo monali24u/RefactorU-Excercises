@@ -1,0 +1,50 @@
+
+.divform{
+  height: 500px;
+  width: 500px;
+  background-color: #ffb499;
+  padding: 10px;
+  position: absolute;
+  left: 10%;
+}
+h3{
+  text-align: center;
+}
+
+.tag1 input{
+  height: 36px;
+  width: 200px;
+  position: relative;
+  left: 18px;
+  padding: 6px;
+}
+
+button, select{
+    text-transform: none;
+    height: 36px;
+    width: 193px;
+
+}
+
+.tag1 #Name{
+  position: relative;
+  left: 90px;
+}
+
+.tag1 #Address{
+  position: relative;
+  left: 74px;
+}
+
+.tag1 label{
+  padding: 10px;
+}
+
+.tag1 button{
+  width: 120px;
+  height: 45px;
+}
+
+#form1{
+  padding: 7vw;
+}
