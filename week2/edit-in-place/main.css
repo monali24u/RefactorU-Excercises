@@ -1,7 +1,7 @@
 
 .divform{
-  height: 500px;
-  width: 500px;
+  height: 70%;
+  width: 45%;
   background-color: #ffb499;
   padding: 10px;
   position: absolute;
@@ -12,39 +12,13 @@ h3{
 }
 
 .tag1 input{
-  height: 36px;
-  width: 200px;
+  height: 3vw;
+  width: 15vw;
   position: relative;
-  left: 18px;
+  left: 2%;
   padding: 6px;
 }
 
-button, select{
-    text-transform: none;
-    height: 36px;
-    width: 193px;
-
-}
-
-.tag1 #Name{
-  position: relative;
-  left: 90px;
-}
-
-.tag1 #Address{
-  position: relative;
-  left: 74px;
-}
-
-.tag1 label{
-  padding: 10px;
-}
-
-.tag1 button{
-  width: 120px;
-  height: 45px;
-}
-
 #form1{
-  padding: 7vw;
+  padding: 5vw;
 }
