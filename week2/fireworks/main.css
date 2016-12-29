@@ -1,0 +1,89 @@
+
+body{
+    font: normal 100% "trebuchet ms", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: white;
+    background-image: url("Cybernetic-Background-1600-X-720-px.jpg");
+}
+body h2{
+  font-size: 35px;
+  color:red;
+}
+.homePara p{
+  color:black;
+  font-size: 18px;
+}
+
+#home{
+  padding-top: 5%;
+}
+
+.img-circle{
+  width: 24%;
+  height: auto;
+  border-radius: 50%;
+}
+
+@media(max-width: 1024px){
+  body{
+    background-color: #a4c0f4;
+  }
+}
+
+/*------------------------------------------*/
+/*
+.flipper:hover{
+		transform: rotateY(180deg);
+	}*/
+
+.img-circle:hover{
+  transform: rotateY(180deg);
+}
+
+/*.front:hover{
+  opacity: 0;
+}
+
+.back:hover{
+  opacity: 1;
+}*/
+
+/* flip speed goes here */
+.flipper{
+  transition: 10s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane placed above back */
+.front {
+	z-index: 2;
+  position: inherit;
+	transform: rotateY(0deg);
+}
+
+/* back hidden pane */
+.back{
+	transform: rotateY(180deg);
+}
+
+/*------------------------------------------------------------*/
+
+body {
+	background: #000;
+	margin: 0;
+}
+
+canvas {
+	cursor: crosshair;
+	display: block;
+}
