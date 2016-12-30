@@ -1,0 +1,38 @@
+
+.button1{
+  font-family: helvetica;
+  font-size: 30px;
+  color: #fff;
+  background: #587286;
+  border: 0;
+  font-weight: 100;
+  height: 120px;
+  width: 220px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.button1:hover{
+  background: #3B5C76;
+}
+
+.applied{
+  display: inline-block;
+  position: fixed;
+  padding: 0px 10px;
+  height: 70px;
+  width: 200px;
+  background-color: coral;
+  color: black;
+  font-size: 18px;
+  top: 26%;
+  left: 40%;
+  border-radius: 5px;
+}
+
+.button2{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
