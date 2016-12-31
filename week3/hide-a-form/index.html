@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+  <title>Hide a Form</title>
+    <link href="main.css" rel="stylesheet"/>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+  </head>
+
+  <body ng-controller='formControl'>
+  <img src="newyork.jpg" height="295" width=100%/>
+    <img src="Minion.jpg" height="150" width="150" class="profile"/>
+    <form class="myForm">
+      <label>Name</label><br/>
+      <div>Monali Patil</div>
+      <!-- <input type="text" placeholder="Name"/><br/> -->
+      <label>Biodata</label><br/>
+      <div>Full stack web developer and Software engineer. I am currently seeking a challenging and fun software development opportunity. I have a Bachelors degree in computer science.
+        My first software development job was working at Bajaj Allianz as Junior software engineer . My responsibilities included designing, implementation and testing of new features and software modules. I joined HP in 2015 and worked as Software development engineer on projects using c++/C# and .net framework.
+      </div>
+      <!-- <input type="text" placeholder="Biodata"/><br/> -->
+      <label>Fav Books</label><br/>
+      <div>who moved my cheese?, midnight to millennium, the monk who sold his ferrari</div>
+      <!-- <input type="text" placeholder="Book Names"/><br/> -->
+      <label>Fav js libraries</label><br/>
+      <div>Bootstrap, angularJS, nodeJS, expressJS, Ajax</div>
+      <!-- <input type="text" placeholder="jS libraries"/><br/> -->
+      <br/>
+  </form>
+<button class="btn" ng-click="insert()">Show Form</button>
+
+  <form ng-show='show1' class='form2'>
+    <label>Name</label><br/>
+    <input type="text" placeholder="Name"/><br/>
+    <label>Biodata</label><br/>
+    <textarea type="text" placeholder="Biodata"></textarea><br/>
+    <label>Fav Books</label><br/>
+    <input type="text" placeholder="Book Names"/><br/>
+    <label>Fav js libraries</label><br/>
+    <input type="text" placeholder="jS libraries"/><br/>
+    <br/>
+    <button class="btn1" ng-click="updateData()">Submit</button>
+</form>
+
+
+</body>
+<script src="main.js"></script>
+
+</html>

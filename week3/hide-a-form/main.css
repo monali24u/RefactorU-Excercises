@@ -1,0 +1,46 @@
+
+body{
+  background-color: black;
+}
+
+.profile{
+  position: absolute;
+  top: 20%;
+  left: 2%;
+}
+
+.myForm{
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  font-size: 20px;
+  color: deeppink;
+}
+
+.myForm div{
+  color: #1E90FF;
+}
+
+.btn{
+  position: absolute;
+  top:10%;
+  left: 2%;
+  height: 50px;
+  width: 100px;
+}
+
+.form2{
+  position: absolute;
+  top: 4%;
+  left: 30%;
+  background-color: coral;
+  padding: 20px;
+}
+.form2 input{
+  width: 200px;
+  height: 20px;
+}
+.form2 textarea{
+  width: 200px;
+  height: 40px;
+}
