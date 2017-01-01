@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="slider">
+  <head>
+    <title>Image Slider</title>
+      <script data-require="angular.js@1.4.8" data-semver="1.4.8" src="https://code.angularjs.org/1.4.8/angular.js"></script>
+      <script data-require="angular-route@*" data-semver="1.4.8" src="https://code.angularjs.org/1.4.8/angular-route.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.js"></script>
+      <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.2.1.js"></script>
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+      <script src="main.js"></script>
+      <link href="main.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <div ng-controller="sliderCntl" id="slides_control">
+      <div>
+        <uib-carousel interval="myInterval">
+          <uib-slide ng-repeat="slide in slides" active="active" index="$index">
+            <img ng-src={{slide.image}}>
+            <div class="carousel-caption">
+              <h4> Slide {{$index+1}}</h4>
+            </div>
+          </uib-slide>
+        </uib-carousel>
+      </div>
+    </div>
+  </body>
+</html>

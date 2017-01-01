@@ -1,0 +1,11 @@
+
+img{
+  margin:auto;
+  width: 100%;
+}
+#slides_control {
+  position:absolute;
+  width: 60%;
+  left:20%;
+  top:4%;
+}
