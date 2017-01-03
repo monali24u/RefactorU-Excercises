@@ -1,0 +1,17 @@
+
+/*.alpha{
+  background-image: url("/map-marker-hi.png");
+  background-repeat:no-repeat;
+  display:inline-block;
+  position:absolute;
+  height:16px;
+  width:16px;
+}*/
+
+.marker{
+  position: absolute;
+  background-image: url("/map-marker-hi.png");
+  height: 16px;
+  width: 16px;
+  /*background-color: red;*/
+}
