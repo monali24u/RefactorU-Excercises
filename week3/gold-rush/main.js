@@ -12,7 +12,7 @@ function goldCntlFun($scope){
   // myEl.addClass('alpha');
 
   $scope.coordinateArry = [ ];
-  
+
   $scope.getCoOrdinates = function($event){
     var Obj = { };
     Obj.x = $event.pageX;
@@ -20,4 +20,9 @@ function goldCntlFun($scope){
     $scope.coordinateArry.push(Obj);
     console.log($event.pageX , $event.pageY);
   }
+
+  $scope.remove = function(array, index){
+      array.splice(index, 1);
+  }
+
 }

@@ -10,8 +10,8 @@
 
 .marker{
   position: absolute;
-  background-image: url("/map-marker-hi.png");
-  height: 16px;
-  width: 16px;
+  background-image: url("http://ruralshores.com/assets/marker-icon.png");
+  height: 40px;
+  width: 25px;
   /*background-color: red;*/
 }

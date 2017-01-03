@@ -9,7 +9,7 @@
 
   <body ng-controller="goldCntl">
     <img  ng-click="getCoOrdinates($event)" src="/starter-code/topo-co.jpg" height="100%" width="100%">
-    <div ng-repeat="coord in coordinateArry" class="marker" style="left:{{coord.x}}px; top:{{coord.y}}px">
+    <div ng-repeat="coord in coordinateArry" class="marker"  ng-click="remove(coordinateArry, $index)" style="left:{{coord.x}}px; top:{{coord.y}}px">
     </div>
   </body>
     <script src="main.js"></script>
