@@ -1,0 +1,37 @@
+
+body {
+	margin: 50px;
+}
+h1{
+	padding-bottom: 18px;
+	background: -webkit-linear-gradient(#33FFCC, #33CCFF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.form-horizontal .control-label{
+	color: #33CCFF;
+}
+
+.form-horizontal .btn{
+	background-color: #33CCFF;
+}
+
+#quotes #sentence{
+	font-size: 20px;
+	font-weight: bold;
+	font-style: oblique;
+	color: #B8B8B8;
+}
+
+#quotes #author{
+	font-size: 13px;
+	font-weight: 600;
+	color: #B8B8B8;
+}
+
+#quotes #rating{
+	font-size: 11px;
+	font-weight: bold;
+	color: #B8B8B8;
+}
