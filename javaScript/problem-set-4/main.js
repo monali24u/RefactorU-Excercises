@@ -2,33 +2,28 @@
 function addNumbers(str){
 
   var addition = 0;
+  var temp;
+  for(var i=0; i<str.length; i++){
 
-  if(isNaN(str[0]) == false){
-    addition = addition + Number(str[0]);
-  }
+      var isumb = str[i] - '0';
 
-  for(var i=1; i<str.length; i++){
+      if(isNaN(isumb) == false && str[i] != ' '){
+        temp = 0;
 
-    if(str[i] != ' '){
-
-      if(isNaN(str[i-1]) == false  && isNaN(str[i]) == false){
-        if(str[i-1] != ' '){
-          addition = (addition * 10) + Number(str[i]);
+        while(isNaN(str[i] - '0') == false && str[i] != ' '){
+          temp = (temp*10) + Number(str[i]);
+          i++;
         }
-        else if(str[i-1] == ' '){
-          addition = addition + Number(str[i]);
-        }
-      }
-      else if(isNaN(str[i-1]) == true  && isNaN(str[i]) == false){
-          addition = addition + Number(str[i]);
+
+        addition = addition + temp;
       }
 
-    }
   }
+
   return addition;
 }
 
-var result = addNumbers('88Hello 3!');
+var result = addNumbers('88Hello 3 33!');
 console.log(result);
 var result = addNumbers('55Hello');
 console.log(result);
@@ -48,7 +43,7 @@ function longestWord(str){
   return splitted[lengthArry.indexOf(maxLength)];
 }
 
-console.log(longestWord("My name is monali. what is your friends name alexzander?"));
+ console.log(longestWord("My name is monali. what is your friends name alexzander?"));
 
 //---------------------------------------------------------------------------
 //averageStringNumbers
