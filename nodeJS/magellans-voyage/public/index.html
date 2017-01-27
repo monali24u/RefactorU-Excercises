@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app='Magellan'>
+    <head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+<script src='./controller.js'></script>
+    </head>
+    <body ng-controller='mController'>
+        <div>
+            <div>Title:- {{mycontent.title}}</div>
+            <div>Description:- {{mycontent.description}}</div>
+            <div>Previous:- {{mycontent.previous}}</div>
+            <div>NextDestination:- {{mycontent.nextDestination}}</div>
+            <br/>
+            <br/>
+            <button ng-click='contentGetter(mycontent.previous)' type="btn">Previous</button>  <button ng-click='contentGetter(mycontent.nextDestination)'type="btn"><a href=''>Next</a></button>
+        </div>
+    </body>
+</html>
