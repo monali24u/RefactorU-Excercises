@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+  <head>
+    <title>Angular Part2</title>
+    <link href="main2.css"/>
+  </head>
+
+  <body>
+    <div ng-controller='mainController'>
+      <h1 ng-mouseover='headHover1()' ng-mouseleave='hoverOut1()'>Demographics of India {{greeting}}</h1>
+      <p ng-mouseover="style={color:'pink'}" ng-mouseleave="style={color:'black'}" ng-style="style">India is the second most populous country in the world, with (1.3 billion) people,nearly a fifth of the world's population. Already containing 18% of the world's population, India is projected to be the world's most populous country by 2022,surpassing China, its population reaching 1.7 billion by 2050.Thus, India is expected to become the first political entity in history to be home to more than 1.5 billion people.</p>
+      <a ng-click='clicked1($event)' href="https://en.wikipedia.org/wiki/Demographics_of_India" target="_blank" ng-show='show1'>Visit Demographics of India</a>
+      <hr/>
+      <h3 ng-mouseover='headHover2()' ng-mouseleave='hoverOut2()'>History {{greeting1}}</h3>
+      <p ng-mouseover="style1={color:'pink'}" ng-mouseleave="style1={color:'black'}" ng-style="style1">It has been estimated that the population was about 100 million in 1600 and remained nearly static until the late 19th century. It reached 255 million according to the first census taken in 1881.</p>
+      <a ng-click='clicked2($event)' href="https://en.wikipedia.org/wiki/Demographics_of_India" target="_blank" ng-show='show2'>Visit History of Demographics of India</a>
+    </div>
+  </body>
+
+  <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+  <script src="main2.js"></script>
+</html>

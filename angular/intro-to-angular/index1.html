@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+  <head>
+    <title>Intro to Angular</title>
+  </head>
+
+  <body>
+    <h1>Sample Application</h1>
+    <div ng-controller='mainController'>
+      <button ng-click="changeGreeting()"> Change it up</button>
+      <button ng-click="changeGreeting2()"> Change it</button>
+      <h1>Hello {{greeting}}</h1>
+      <button ng-click="showList()"> Show List</button>
+      <p>List of Countries:</p>
+      <ul>
+        <li ng-repeat='hero in heroes'>{{hero}}</li>
+      </ul>
+   </div>
+
+
+  </body>
+
+  <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+  <script src="main1.js"></script>
+</html>
