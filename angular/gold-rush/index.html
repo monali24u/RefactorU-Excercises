@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app ="goldRushApp">
+
+  <head>
+    <title>Gold Rush</title>
+    <link href="main.css" rel="stylesheet"/>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+  </head>
+
+  <body ng-controller="goldCntl">
+    <img  ng-click="getCoOrdinates($event)" src="/starter-code/topo-co.jpg" height="100%" width="100%">
+    <div ng-repeat="coord in coordinateArry" class="marker" ng-click="remove(coordinateArry, $index)" style="left:{{coord.x}}px; top:{{coord.y}}px"> </div>
+  </body>
+    <script src="main.js"></script>
+</html>

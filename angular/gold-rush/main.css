@@ -1,0 +1,26 @@
+
+/*.alpha{
+  background-image: url("/map-marker-hi.png");
+  background-repeat:no-repeat;
+  display:inline-block;
+  position:absolute;
+  height:16px;
+  width:16px;
+}*/
+
+.marker{
+  position: absolute;
+  background-image: url("http://ruralshores.com/assets/marker-icon.png");
+  height: 40px;
+  width: 25px;
+  /*background-color: red;*/
+}
+
+/*.marker:hover{
+  background-color: red;
+}*/
+
+.popover{
+  position: absolute;
+  z-index: 100;
+}
